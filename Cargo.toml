@@ -1,0 +1,25 @@
+[package]
+name = "dsnmask"
+version = "0.1.0"
+edition = "2021"
+description = "Mask the password in a DSN/connection string before it goes into Slack or a bug report"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/dsnmask"
+readme = "README.md"
+keywords = ["dsn", "connection-string", "redact", "secrets", "postgres"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "dsnmask"
+path = "src/lib.rs"
+
+[[bin]]
+name = "dsnmask"
+path = "src/main.rs"
+
+[dependencies]
+url = "2"
+regex = "1"
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
