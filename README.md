@@ -5,6 +5,12 @@ Slack message or a GitHub issue. "Here's my connection string, can you
 help debug this" with the real password still in it is a constant,
 mundane leak — nothing addresses it directly today.
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
